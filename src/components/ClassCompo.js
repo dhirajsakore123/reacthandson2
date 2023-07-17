@@ -31,7 +31,9 @@ clickHandle=()=>{
   render() {
     return (
       <div className='midbox'>
+        <h1>EMPLOYEE FEEDBACK FORM</h1>
 <form>
+
       <label htmlFor="name">Name:</label>
       <input type='text' id='name' name="Name"   value={this.state.Name} onChange={this.changeHandle}/> <br/>
      
@@ -49,7 +51,7 @@ clickHandle=()=>{
         this.state.EmpData.map((item,index)=>{
           return(
        
-          <div className='cont'>
+          <div className='cont' key={index}>
                 Name: {item.name} || 
                 Departnment: {item.dep}|| 
                 Rating: {item.rate}
