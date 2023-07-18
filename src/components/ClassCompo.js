@@ -12,19 +12,27 @@ export default class ClassCompo extends Component {
         }
   
 changeHandle=(event)=>{
+  
     this.setState({[event.target.name]:event.target.value})
     this.setState({[event.target.dept]:event.target.value})
    this.setState({[event.target.rate]:event.target.value})
 }
 
 clickHandle=()=>{
+ 
   let newObj={
     name:this.state.Name,
     dep:this.state.Dept,
     rate:this.state.Rate,
   }
   this.state.EmpData.push(newObj);
-  this.setState({EmpData:this.state.EmpData})
+  this.setState({
+    EmpData:this.state.EmpData,
+    Name: "",
+           Dept:"",
+           Rate:"",
+
+  })
   
 }
 
