@@ -13,9 +13,11 @@ code {
     monospace;
 }
 body{
-  background-image: linear-gradient(rgb(96, 213, 239),pink,white);
+  background-image: linear-gradient(rgb(96, 213, 239),pink,rgb(230, 227, 234));
   background-repeat: no-repeat;
-  height: 100vh;
+  background-size: cover;
+  min-height:97vh;
+  background-attachment: fixed;
 }
 .midbox{
   box-sizing: border-box;
@@ -52,7 +54,7 @@ button:hover{
 .display{
   box-sizing: border-box;
   position: relative;
-  top:200px;
+  top:150px;
   left: 100px;
   
   width: 85vw;
